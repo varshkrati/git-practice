@@ -1,2 +1,203 @@
-# Git Practice
-<h1>My First Git Project</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git & GitHub Cheat Sheet</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            margin: 0;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            margin-top: 30px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 14px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #222;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 4px 7px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        .important {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: white;
+            border-left: 5px solid #222;
+        }
+
+        .workflow {
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Git & GitHub Cheat Sheet</h1>
+
+    <p>
+        Beginner-friendly Git commands with their meaning and usage.
+    </p>
+
+    <table>
+
+        <tr>
+            <th>Command</th>
+            <th>Kya karta hai?</th>
+            <th>Kab use karna hai?</th>
+        </tr>
+
+        <tr>
+            <td><code>git --version</code></td>
+            <td>Check karta hai Git installed hai ya nahi.</td>
+            <td>Starting mein</td>
+        </tr>
+
+        <tr>
+            <td><code>git config --global user.name "Name"</code></td>
+            <td>Git mein apna naam set karta hai.</td>
+            <td>First-time setup</td>
+        </tr>
+
+        <tr>
+            <td><code>git config --global user.email "email"</code></td>
+            <td>Git mein email set karta hai.</td>
+            <td>First-time setup</td>
+        </tr>
+
+        <tr>
+            <td><code>git init</code></td>
+            <td>Current folder ko Git repository banata hai.</td>
+            <td>New project mein Git start karte waqt</td>
+        </tr>
+
+        <tr>
+            <td><code>git status</code></td>
+            <td>Project ki current situation batata hai.</td>
+            <td>Bahut frequently</td>
+        </tr>
+
+        <tr>
+            <td><code>git add index.html</code></td>
+            <td>index.html ke changes ko staging area mein rakhta hai.</td>
+            <td>Commit se pehle</td>
+        </tr>
+
+        <tr>
+            <td><code>git add .</code></td>
+            <td>Current project ke saare changes staging mein rakhta hai.</td>
+            <td>Multiple changes ke liye</td>
+        </tr>
+
+        <tr>
+            <td><code>git commit -m "message"</code></td>
+            <td>Staged changes ka save-point/history banata hai.</td>
+            <td>Changes ready hone ke baad</td>
+        </tr>
+
+        <tr>
+            <td><code>git log --oneline</code></td>
+            <td>Purane commits/history dikhata hai.</td>
+            <td>History dekhni ho</td>
+        </tr>
+
+        <tr>
+            <td><code>git remote -v</code></td>
+            <td>Check karta hai local project kis GitHub repo se connected hai.</td>
+            <td>Connection check karne ke liye</td>
+        </tr>
+
+        <tr>
+            <td><code>git remote add origin REPO_URL</code></td>
+            <td>Local project ko GitHub repo se connect karta hai.</td>
+            <td>Usually ek baar</td>
+        </tr>
+
+        <tr>
+            <td><code>git push</code></td>
+            <td>Local commits ko GitHub par bhejta hai.</td>
+            <td>Apne changes online bhejne ke liye</td>
+        </tr>
+
+        <tr>
+            <td><code>git pull</code></td>
+            <td>GitHub se latest changes computer mein laata hai.</td>
+            <td>Latest version lene ke liye</td>
+        </tr>
+
+        <tr>
+            <td><code>git branch</code></td>
+            <td>Branches dikhata hai aur current branch batata hai.</td>
+            <td>Branch check karne ke liye</td>
+        </tr>
+
+    </table>
+
+    <div class="important">
+
+        <h2>🔥 Most Important Workflow</h2>
+
+        <div class="workflow">
+            git status → git add . → git commit → git push
+        </div>
+
+        <h3>Meaning:</h3>
+
+        <p>
+            <code>git status</code> → Kya change hua?
+        </p>
+
+        <p>
+            <code>git add .</code> → Changes ko next commit ke liye select karo.
+        </p>
+
+        <p>
+            <code>git commit</code> → Changes ka save-point banao.
+        </p>
+
+        <p>
+            <code>git push</code> → Changes ko GitHub par bhejo.
+        </p>
+
+    </div>
+
+</body>
+</html>
